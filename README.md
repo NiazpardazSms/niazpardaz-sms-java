@@ -2,7 +2,7 @@
 
 Official Java SDK for Niazpardaz SMS API | کتابخانه رسمی جاوا برای API پیامکی نیازپرداز
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.niazpardaz/niazpardazSms.svg)](https://search.maven.org/artifact/com.niazpardaz/niazpardazSms)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.niazpardazsms/niazpardazSms.svg)](https://search.maven.org/artifact/io.github.niazpardazsms/niazpardazSms)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Tests](https://github.com/NiazpardazSms/niazpardaz-sms-java/actions/workflows/tests.yml/badge.svg)](https://github.com/NiazpardazSms/niazpardaz-sms-java/actions)
 
