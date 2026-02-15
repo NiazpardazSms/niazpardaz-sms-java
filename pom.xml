@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.niazpardaz</groupId>
-    <artifactId>niazpardaz-sms-java</artifactId>
+    <groupId>io.github.niazpardazsms</groupId>
+    <artifactId>niazpardazSms</artifactId>
     <version>1.0.2</version>
     <packaging>jar</packaging>
 
@@ -29,6 +29,7 @@
 
     <scm>
         <connection>scm:git:git://github.com/NiazpardazSms/niazpardaz-sms-java.git</connection>
+        <developerConnection>scm:git:ssh://github.com/NiazpardazSms/niazpardaz-sms-java.git</developerConnection>
         <url>https://github.com/NiazpardazSms/niazpardaz-sms-java</url>
     </scm>
 
@@ -146,6 +147,31 @@
                         <goals><goal>jar</goal></goals>
                     </execution>
                 </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>3.2.4</version>
+                <executions>
+                    <execution>
+                    <phase>verify</phase>
+                    <goals>
+                        <goal>sign</goal>
+                    </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.7.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <publishingServerId>central</publishingServerId>
+                    <autoPublish>false</autoPublish>
+                </configuration>
             </plugin>
         </plugins>
     </build>
